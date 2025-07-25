@@ -1,47 +1,36 @@
-import { View, Text } from 'react-native';
-
-export default function RecipeScreen() {
-    return (
-        <View>
-            <Text>This is future recipe screen</Text>
-        </View>
-    );
-}
 import { View,  Text, Image,  TouchableOpacity,StyleSheet, ScrollView, SafeAreaView,  Dimensions,} from 'react-native';
 export default function Recipe() {
   const handlePress = () => {} ;
-
   return (
     <SafeAreaView style={styles.safeArea}>
       <ScrollView contentContainerStyle={styles.scroll}>
         <View style={styles.container}>
-          <Text style={styles.title}>Muffin</Text>
+          <Text style={styles.title}>Éclairs</Text>
 
           <View style={styles.row}>
             <View style={styles.ingredients}>
               <Text style={styles.ingredientText}>Ingredients:</Text>
-              <Text style={styles.ingredientText}>• 2 eggs</Text>
-              <Text style={styles.ingredientText}>• 150 ml milk</Text>
+              <Text style={styles.ingredientText}>• 3 eggs</Text>
               <Text style={styles.ingredientText}>• 200 g flour</Text>
-              <Text style={styles.ingredientText}>• 150 g sugar</Text>
-              <Text style={styles.ingredientText}>• 100 g butter</Text>
+              <Text style={styles.ingredientText}>• 150 ml milk</Text>
+              <Text style={styles.ingredientText}>• 80 g sugar</Text>
+              <Text style={styles.ingredientText}>• 180 g butter</Text>
               <Text style={styles.ingredientText}>• pinch of salt</Text>
             </View>
             <Image
-              source={require('./assets/muffin.png')}
+              source={require('./assets/ecler.png')}
               style={styles.image}
             />
           </View>
-
           <View style={styles.instructionsBlock}>
             <Text style={styles.recipeTitle}>Recipe:</Text>
             <Text style={styles.instructions}>
-              1. Whisk eggs with sugar until fluffy.{"\n"}
-              2. Melt butter and add to eggs.{"\n"}
-              3. Stir in milk.{"\n"}
-              4. Sift flour with salt and gently fold into the mixture.{"\n"}
-              5. Pour batter into a greased pan.{"\n"}
-              6. Bake for 30 min at 180°C (350°F).
+             1. Bring milk, butter, and salt to a boil.{"\n"}
+             2. Add flour and stir until smooth dough forms.{"\n"}
+             3. Let cool slightly. Beat in eggs one at a time.{"\n"}
+             4. Pipe onto baking tray.{"\n"}
+             5. Bake at 200°C (390°F) for 25–30 minutes{"\n"} 
+
             </Text>
           </View>
 

@@ -1,47 +1,36 @@
-import { View, Text } from 'react-native';
-
-export default function RecipeScreen() {
-    return (
-        <View>
-            <Text>This is future recipe screen</Text>
-        </View>
-    );
-}
 import { View,  Text, Image,  TouchableOpacity,StyleSheet, ScrollView, SafeAreaView,  Dimensions,} from 'react-native';
 export default function Recipe() {
   const handlePress = () => {} ;
-
   return (
     <SafeAreaView style={styles.safeArea}>
       <ScrollView contentContainerStyle={styles.scroll}>
         <View style={styles.container}>
-          <Text style={styles.title}>Muffin</Text>
+          <Text style={styles.title}>Brownies</Text>
 
           <View style={styles.row}>
             <View style={styles.ingredients}>
               <Text style={styles.ingredientText}>Ingredients:</Text>
-              <Text style={styles.ingredientText}>• 2 eggs</Text>
+              <Text style={styles.ingredientText}>• 150 g dark chocolate</Text>
+              <Text style={styles.ingredientText}>• 80 g flourr</Text>
               <Text style={styles.ingredientText}>• 150 ml milk</Text>
-              <Text style={styles.ingredientText}>• 200 g flour</Text>
-              <Text style={styles.ingredientText}>• 150 g sugar</Text>
-              <Text style={styles.ingredientText}>• 100 g butter</Text>
+              <Text style={styles.ingredientText}>• 150 g sugar </Text>
+              <Text style={styles.ingredientText}>• 180 g butter</Text>
               <Text style={styles.ingredientText}>• pinch of salt</Text>
             </View>
             <Image
-              source={require('./assets/muffin.png')}
+              source={require('./assets/brownies.png')}
               style={styles.image}
             />
           </View>
-
           <View style={styles.instructionsBlock}>
             <Text style={styles.recipeTitle}>Recipe:</Text>
             <Text style={styles.instructions}>
-              1. Whisk eggs with sugar until fluffy.{"\n"}
-              2. Melt butter and add to eggs.{"\n"}
-              3. Stir in milk.{"\n"}
-              4. Sift flour with salt and gently fold into the mixture.{"\n"}
-              5. Pour batter into a greased pan.{"\n"}
-              6. Bake for 30 min at 180°C (350°F).
+             1. Melt chocolate with butter..{"\n"}
+             2. Whisk eggs and sugar until fluffy..{"\n"}
+             3. Stir in chocolate mixture.{"\n"}
+             4. Fold in flour and salt.{"\n"}
+             5. Pour into pan and bake at 180°C (350°F) for 20–25 minutes.{"\n"} 
+
             </Text>
           </View>
 
